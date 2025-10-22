@@ -49,4 +49,12 @@ public class Storico {
     public void setDataFine(LocalDate dataFine) {
         DataFine = dataFine;
     }
+
+    public Storico(int idStorico, int matricola, int idRuolo, LocalDate dataInizio, LocalDate dataFine) {
+        this.idStorico = idStorico;
+        this.matricola = matricola;
+        this.idRuolo = idRuolo;
+        this.dataInizio = dataInizio;
+        DataFine = dataFine;
+    }
 }
