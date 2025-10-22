@@ -38,4 +38,11 @@ public class Impiegato {
     public void setMatricola(int matricola) {
         this.matricola = matricola;
     }
+
+    public Impiegato(String nome, String cognome, String codiceFiscale, int matricola) {
+        this.nome = nome;
+        this.cognome = cognome;
+        this.codiceFiscale = codiceFiscale;
+        this.matricola = matricola;
+    }
 }
