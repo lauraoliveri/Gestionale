@@ -1,9 +1,6 @@
 package org.example;
 
-import dao.ImpiegatoDao;
-import dao.ImpiegatoDaoImpl;
-import dao.RuoloDao;
-import dao.StoricoDao;
+import dao.*;
 import model.Impiegato;
 import model.Ruolo;
 import model.Storico;
@@ -46,7 +43,7 @@ public class Main {
 
             // TEST Ruolo e RuoloDao
 
-            RuoloDao ruoloDao = new RuoloDao();
+            RuoloDao ruoloDao = new RuoloDaoImpl();
 
             // inserisco ruoli
             Ruolo ruolo1 = new Ruolo();
@@ -78,7 +75,7 @@ public class Main {
 
             // TEST Storico e StoricoDao
 
-            StoricoDao storicoDao = new StoricoDao();
+            StoricoDao storicoDao = new StoricoDaoImpl();
 
             // creo due storici
             Storico storico1 = new Storico(1, 1001, 1, LocalDate.of(2020, 1, 1), LocalDate.of(2021, 12, 31));
