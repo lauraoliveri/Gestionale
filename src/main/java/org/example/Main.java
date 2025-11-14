@@ -1,6 +1,7 @@
 package org.example;
 
 import dao.ImpiegatoDao;
+import dao.ImpiegatoDaoImpl;
 import dao.RuoloDao;
 import dao.StoricoDao;
 import model.Impiegato;
@@ -17,7 +18,7 @@ public class Main {
 
 
             // Creo il DAO
-            ImpiegatoDao dao = new ImpiegatoDao();
+            ImpiegatoDao dao = new ImpiegatoDaoImpl();
 
             // Inserisco alcuni impiegati
             Impiegato imp1 = new Impiegato("Mario", "Rossi", "MRORSS80A01H501X", 1001);
